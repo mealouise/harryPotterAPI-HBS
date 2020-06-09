@@ -1,0 +1,24 @@
+<h1>Harry Potter Houses</h1>
+
+<form action="houses" method="post">
+    <input type="text" name="house">
+    <input type="submit" value="submit">
+</form>
+
+
+
+{{#each houseInfo }}
+    <li>
+        {{this.name}}
+        {{this.headofHouse}}
+        {{this.houseGhost}}
+        {{this.founder}}
+        {{this.mascot}}
+        {{this.values}}
+        {{this.colors}}
+    </li>
+{{/each}}
+
+
+
+
